@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+   background-color: black;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr ;
+    
+}
+
+h1{
+    font-size: 50px;
+    color: green;
+}
+
+.header img {
+    grid-column: 2/3;
+    grid-row: 1/1;
+}
+
+li {
+    font-size: 25px;
+    color: green;
+    margin: 40px;
+    list-style-type: none;
+}
+.accesos a {
+    color: green;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+
+}
+
+/*termina el header*/
+
+.main{
+    display: flex;
+    background-color: rgb(43, 18, 43);
+}
+
+h2{
+    font-size: 30px;
+    background-color: rgb(43, 18, 43);
+    color: aliceblue;;
+    
+}
+
+div h3{
+    background-color: green;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+#carrito img{
+    height: 50px;
+   
+}
+
+#carrito p {
+    font-size: 30px;
+}
+
+#carrito {
+    height: 90px;
+    width: 90px;
+    background-color: rgb(155, 78, 155);
+}
+
+td img {
+    height: 50px;
+    width: 30px;
+}
+
+.accesos {
+    display: flex;
+    grid-column: 4/6;
+    grid-row: 1/2;
+
+}
+
+.compra {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    background-color: rgb(43, 18, 43);
+}
+
+.compra div {
+    display: grid;
+    height: 300;
+    margin: 80px; border: solid;
+    background-color: green;  
+}
+
+.compra div p {
+    font-size: 30px;
+    text-align: center;
+    background-color: green;
+}
+
+#cantidad_total{
+    color: beige
+}
+
+.bottones_fin{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fin_compra{
+    height: 80px;
+    width: 120px;
+    font-size: 20px;
+}
+
+.compra div img{
+    height: 300px;
+    width: 190px;
+
+   
+}
+
+.compra div button {
+    font-size: 30px;
+    background-color: black;
+    color: green;
+}
+
+th {
+    padding: 30px;
+    color: beige
+}
+
+td {
+    padding: 20px;
+    color: beige
+}
+
+#mostrarCarrito{
+   background-color: black;
+   display: none;
+   
+}
+
+#mostrarCarrito thead{
+    color: beige;
+
+    }
+
+
+/*footer*/
+
+
+footer {
+    background-color: black;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes img{
+width: 200px;
+margin-top: 100px;
+}
+
+
+
+
+
+.juegos {
+    background-color: rgb(43, 18, 43);;
+    display: flex;
+}
+
+.juegos div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.juegos img {
+    margin: 80px; border: solid;
+}
+
+.juegos h3 {
+    color: aliceblue;;
+    font-size: 30px;
+}

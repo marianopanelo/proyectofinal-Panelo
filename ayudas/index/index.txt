@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viNoo</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+   <header class="header">
+        <h1>viNoo</h1>
+        <img src="./imagenes/logo.png" alt="">
+        <ul class="accesos">
+            <li class="accesos_link1"> <a href="#"> inicio</a></li>
+            <li class="accesos_link2"> <a href="./index/nosotros.html"> nosotros</a></li>
+            <li class="accesos_link3"> <a href="./index/ubicacion.html"> ubicacion del local</a></li>
+            <li class="accesos_link4"> <a href="./index/juegos.html"> juego para previas</a></li>
+        </ul>
+    
+   </header>
+   
+   <main>
+        <h2>productos comprados :</h2>
+    <section>
+        <button class="carrito"><img src="./imagenes/carrito.png" alt=""><p>carrito</p></button>
+        <div>
+            <p>campari</p>
+            <img src="./imagenes/campari.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>cerveza</p>
+            <img src="./imagenes/cerveza.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>coca cola</p>
+            <img src="./imagenes/cocacola.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>fanta</p>
+            <img src="./imagenes/fanta.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>fernet</p>
+            <img src="./imagenes/fernet.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>gin</p>
+            <img src="./imagenes/gin.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>granadina</p>
+            <img src="./imagenes/granadina.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>jugo</p>
+            <img src="./imagenes/jugo.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>malibu</p>
+            <img src="./imagenes/malibu.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>ron</p>
+            <img src="./imagenes/ron.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>sprite</p>
+            <img src="./imagenes/sprite.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>tonica</p>
+            <img src="./imagenes/tonica.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>vino</p>
+            <img src="./imagenes/vino.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>vodka</p>
+            <img src="./imagenes/vodka.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+        <div>
+            <p>wisky</p>
+            <img src="./imagenes/wisky.png" alt="">
+            <p>precio</p>
+            <button>comprar</button>
+        </div>
+    </section>
+   </main>
+   <footer>
+    <h2>nuestras redes</h2>
+    <div class="redes"> 
+        <a href="#"></a> <img  src="./imagenes/facebook_prev_ui.png" alt="facebook"> 
+        <a href="#"></a><img  src="./imagenes/instagram_prev_ui.png" alt=""> 
+        <a href="#"></a> <img  src="./imagenes/twitter_prev_ui.png" alt="" > 
+    </div>
+   </footer>
+
+    <script src="./js/metodos.js"></script>
+</body>
+</html>
