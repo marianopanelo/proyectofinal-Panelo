@@ -13,30 +13,33 @@
 
         <ul class="accesos">
             <li class="accesos_link1"> <a href="../index.html"> inicio</a></li>
-            <li class="accesos_link3"> <a href="./ubicacion.html"> ubicacion y contacto</a></li>
             <li class="accesos_link4"> <a href="./juegos.html"> juego para previas</a></li>
         </ul>
     </header>
-|   
     <main>
+        <h2 >cosas a tener en cuenta</h2>
+        <p>si los intentos son 1 o 2 los tragos se multiplican por 3</p>
+        <p>si los intentos son entre 2 y 5 los tragos se multiplican por 1.5</p>
+        <p>si los intentos son entre 5 y 7 no se toma ni se da tragos</p>
+        <p>si los intentos son 7 o superior se tomara los tragos apostados</p>
+        <p>cuando estes 5 numeros antes o 5 numeros despues de adivinar el numero se le va a avisar al jugador/ra</p>
+    
+        <section>
         <div class="preguntas">
-            <label for="">indique tragos a apostar</label>
-            <br>
-            <input type="number">
-            <button id="tragosAApostar">enviar</button>
-        </div>   
+        <label for="">indique cuantos shot apuesta</label>
         <br>
-        <br>
-        <br>
+        <input  type="number">
+        <button id="tragosAApostar">enviar</button>
+        </div>
         <div class="preguntas">
+           
             <label for="">elija un numero de 1 a 100</label>
             <br>
-            <input type="number">
-            <button id="numeroApostado">enviar</button>
+            <input id="borrar_numero" type="number">
+            <button type="submit" id="numeroApostado" >enviar</button>
         </div>
-        <div>
-            <h2>usted va a tener que tomar :</h2>
-
+        <div id="respuestas">
+            <h2>resultado del numero elegido </h2>
         </div>
 
     </main>
@@ -49,5 +52,5 @@
             <a href="#"> <img  src="../imagenes/twitter_prev_ui.png" alt="" > </a>
         </div>
        </footer>
-
+       <script src="../js/apuestas.js"></script>
 </body>    

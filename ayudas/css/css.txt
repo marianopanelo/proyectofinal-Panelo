@@ -28,7 +28,7 @@ li {
     font-size: 25px;
     color: green;
     margin: 40px;
-
+    list-style-type: none;
 }
 .accesos a {
     color: green;
@@ -40,25 +40,50 @@ li {
 
 /*termina el header*/
 
+.main{
+    display: flex;
+    background-color: rgb(43, 18, 43);
+}
+
 h2{
     font-size: 30px;
     background-color: rgb(43, 18, 43);
+    color: aliceblue;;
     
 }
 
-.carrito img{
+div h3{
+    background-color: green;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+#carrito img{
     height: 50px;
    
 }
 
-.carrito p {
+#carrito p {
     font-size: 30px;
 }
 
-.carrito {
+#carrito {
     height: 90px;
     width: 90px;
-    background-color: rgb(43, 18, 43);
+    background-color: rgb(155, 78, 155);
+}
+
+#principio{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+td img {
+    height: 50px;
+    width: 30px;
 }
 
 .accesos {
@@ -68,39 +93,75 @@ h2{
 
 }
 
-section {
+.compra {
     display: flex;
     height: auto;
     flex-wrap: wrap;
     background-color: rgb(43, 18, 43);
 }
 
-section div {
+.compra div {
     display: grid;
     height: 300;
     margin: 80px; border: solid;
-    background-color: aqua;    
+    background-color: green;  
 }
 
-section div p {
+.compra div p {
     font-size: 30px;
     text-align: center;
     background-color: green;
 }
 
+#cantidad_total{
+    color: beige
+}
 
-section div img{
+.bottones_fin{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#fin_compra{
+    height: 80px;
+    width: 120px;
+    font-size: 20px;
+}
+
+.compra div img{
     height: 300px;
     width: 190px;
 
    
 }
 
-section div button {
+.compra div button {
     font-size: 30px;
     background-color: black;
     color: green;
 }
+
+th {
+    padding: 30px;
+    color: beige
+}
+
+td {
+    padding: 20px;
+    color: beige
+}
+
+#mostrarCarrito{
+   background-color: black;
+   display: none;
+   flex-direction: column;
+   
+}
+
+#mostrarCarrito thead{
+    color: beige;
+
+    }
 
 
 /*footer*/
@@ -118,4 +179,147 @@ footer {
 .redes img{
 width: 200px;
 margin-top: 100px;
+}
+
+
+
+
+
+.juegos {
+    background-color: rgb(43, 18, 43);;
+    display: flex;
+}
+
+.juegos div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.juegos img {
+    margin: 80px; border: solid;
+}
+
+.juegos h3 {
+    color: aliceblue;;
+    font-size: 30px;
+}
+
+h2#swal2-title{
+    background-color: rgb(255, 255, 255);
+}
+
+
+@media only screen and (min-width: 320px ) and (max-width: 800px){
+
+.header {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr  1fr;
+}
+
+.accesos {
+    display: flex;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#mostrarCarrito_tabla{
+    display: flex;
+    flex-direction: column;
+}
+
+th {
+    padding: 3px;
+    color: beige;
+}
+tr {
+    display: flex;
+    justify-content: space-between;    
+}
+td {
+   
+    padding: 15px;
+    color: beige;
+}
+
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes img {
+    width: 50px;
+    margin-top: 40px;
+}
+
+}
+
+
+@media only screen and (min-width: 800px ) and (max-width: 1000px){
+
+    .header {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr  1fr;
+    }
+    
+    .accesos {
+        display: flex;
+        grid-row: 1/4;
+        grid-column: 3/4;
+        flex-direction: column;
+    }
+
+    #mostrarCarrito_tabla{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    th {
+        padding: 3px;
+        color: beige;
+    }
+    tr {
+        display: flex;
+        justify-content: space-between;    
+    }
+    td {
+       
+        padding: 15px;
+        color: beige;
+    }
+
+    .redes img {
+        width: 90px;
+        margin-top: 60px;
+    }
+
+}
+
+@media only screen and (min-width: 1001px ) {
+
+    .header {
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr ;
+    }
+    
+    .accesos {
+        display: flex;
+        
+        grid-column: 3/5;
+        flex-direction: row;
+    }
+
 }

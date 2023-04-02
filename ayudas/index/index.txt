@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>viNoo</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
@@ -13,118 +15,153 @@
         <img src="./imagenes/logo.png" alt="">
         <ul class="accesos">
             <li class="accesos_link1"> <a href="#"> inicio</a></li>
-            <li class="accesos_link2"> <a href="./index/nosotros.html"> nosotros</a></li>
-            <li class="accesos_link3"> <a href="./index/ubicacion.html"> ubicacion del local</a></li>
+            <li class="accesos_link3"> <a href="./index/ubicacion.html"> ubicacion y contacto</a></li>
             <li class="accesos_link4"> <a href="./index/juegos.html"> juego para previas</a></li>
         </ul>
     
    </header>
    
-   <main>
+   <main class="main">
+        <div>
         <h2>productos comprados :</h2>
-    <section>
-        <button class="carrito"><img src="./imagenes/carrito.png" alt=""><p>carrito</p></button>
-        <div>
-            <p>campari</p>
-            <img src="./imagenes/campari.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
+        <div id="principio">
+           
+            <button id="carrito">
+                <img src="./imagenes/carrito.png" alt="">
+                <p>carrito</p></button>
+           
+            <div>
+                <h2 id="formas_de_pago"></h2>
+            </div>
         </div>
-        <div>
-            <p>cerveza</p>
-            <img src="./imagenes/cerveza.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
+        <h2>nuestros productos :</h2>
+            <section class="compra">
+                <div>
+                    <h3>campari</h3>
+                    <img src="./imagenes/campari.png" alt="">
+                    <p>500$</p>
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>cerveza</h3>
+                    <img src="./imagenes/cerveza.png" alt="">
+                    <p>400$</p>        
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>coca cola</h3>
+                    <img src="./imagenes/cocacola.png" alt="">
+                    <p>450$</p>               
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>fanta</h3>
+                    <img src="./imagenes/fanta.png" alt="">
+                    <p>450$</p>              
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>fernet</h3>
+                    <img src="./imagenes/fernet.png" alt="">
+                    <p>900$</p>               
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>gin</h3>
+                    <img src="./imagenes/gin.png" alt="">
+                    <p>450$</p>               
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>granadina</h3>
+                    <img src="./imagenes/granadina.png" alt="">
+                    <p>450$</p>               
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>jugo</h3>
+                    <img src="./imagenes/jugo.png" alt="">
+                    <p>300$</p>               
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>malibu</h3>
+                    <img src="./imagenes/malibu.png" alt="">
+                    <p>850$</p>               
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>ron</h3>
+                    <img src="./imagenes/ron.png" alt="">
+                    <p>600$</p>               
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>sprite</h3>
+                    <img src="./imagenes/sprite.png" alt="">
+                    <p>450$</p>               
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>tonica</h3>
+                    <img src="./imagenes/tonica.png" alt="">
+                    <p>450$</p>              
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>vino</h3>
+                    <img src="./imagenes/vino.png" alt="">
+                    <p>800$</p>              
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>vodka</h3>
+                    <img src="./imagenes/vodka.png" alt="">
+                    <p>600$</p>               
+                    <button class="botonCompra">comprar</button>
+                </div>
+                <div>
+                    <h3>wisky</h3>
+                    <img src="./imagenes/wisky.png" alt="">
+                    <p>999$</p>            
+                    <button class="botonCompra">comprar</button>
+                </div>
+            </section>
         </div>
-        <div>
-            <p>coca cola</p>
-            <img src="./imagenes/cocacola.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
+        <div id="mostrarCarrito" style="display: none;">
+            <h2>carrito</h2>
+            <table id="mostrarCarrito_tabla">
+                <thead id="carrito_head ">
+                    <tr>
+                        <th>producto</th>
+                        <th>nombre</th>
+                        <th>numero de eliminacion</th>
+                        <th>precio</th>
+                        <th>borrar</th>
+                    </tr>
+                </thead>
+                <tbody id="carrito_productos">
+                </tbody>
+            </table>
+            <div class="bottones_fin">
+                <button id="fin_compra_comprar">comprar</button>
+                <button id="fin_compra_borrar">borrar carrito</button>
+            </div>
         </div>
-        <div>
-            <p>fanta</p>
-            <img src="./imagenes/fanta.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>fernet</p>
-            <img src="./imagenes/fernet.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>gin</p>
-            <img src="./imagenes/gin.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>granadina</p>
-            <img src="./imagenes/granadina.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>jugo</p>
-            <img src="./imagenes/jugo.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>malibu</p>
-            <img src="./imagenes/malibu.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>ron</p>
-            <img src="./imagenes/ron.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>sprite</p>
-            <img src="./imagenes/sprite.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>tonica</p>
-            <img src="./imagenes/tonica.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>vino</p>
-            <img src="./imagenes/vino.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>vodka</p>
-            <img src="./imagenes/vodka.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-        <div>
-            <p>wisky</p>
-            <img src="./imagenes/wisky.png" alt="">
-            <p>precio</p>
-            <button>comprar</button>
-        </div>
-    </section>
-   </main>
+    </main>
+    
+
    <footer>
     <h2>nuestras redes</h2>
     <div class="redes"> 
-        <a href="#"></a> <img  src="./imagenes/facebook_prev_ui.png" alt="facebook"> 
-        <a href="#"></a><img  src="./imagenes/instagram_prev_ui.png" alt=""> 
-        <a href="#"></a> <img  src="./imagenes/twitter_prev_ui.png" alt="" > 
+        <a href="#"> <img  src="./imagenes/facebook_prev_ui.png" alt="facebook"> </a>
+        <a href="#"><img  src="./imagenes/instagram_prev_ui.png" alt=""> </a>
+        <a href="#"> <img  src="./imagenes/twitter_prev_ui.png" alt="" > </a>
     </div>
-   </footer>
+    </footer>
 
+    <script src="sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/metodos.js"></script>
 </body>
 </html>

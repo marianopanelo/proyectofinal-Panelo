@@ -13,6 +13,7 @@
         <img src="../imagenes/logo.png" alt="">
         <ul class="accesos">
             <li class="accesos_link1"> <a href="../index.html"> inicio</a></li>
+            <li class="accesos_link3"> <a href="./ubicacion.html"> ubicacion y contacto</a></li>
             <li class="accesos_link4"> <a href="#"> juego para previas</a></li>
         </ul>
     </header>
@@ -22,19 +23,9 @@
             <h3>adivina el numero</h3>
             <a href="./juegoAdivinarNumero.html"><img src="../imagenes/adivinaElNumero.png" alt=""></a>
        </div>
-       <!--iba a poner para acomodar las piesas con setinterval , pero no me esta tomando las imagenes
-    , iba a hacer asi 
-    Copy code// Crea un nuevo elemento de imagen.
-    var img = document.createElement('img');
-    // Establece la ubicación de la imagen.
-    img.src = 'ruta/a/mi/imagen.jpg';
-    // Agrega la imagen al documento.
-    document.body.appendChild(img);
-lo busque por internet , pero cuando ponog la ruta de la imagen , me tira error 404 y nos e como
-solucionarlo , asi q lo deje sin hacer-->
        <div>
-            <h3>acomodar las piesas</h3>
-            <a href="#"><img src="../imagenes/acomodar las piesasa/popurri.png "></a>
+            <h3>pon las cosas en su lugar</h3>
+            <a href="#"><img src="../imagenes/juegoDeLosAnimales.png" alt=""></a>
         </div>
     </section>
     <footer>
